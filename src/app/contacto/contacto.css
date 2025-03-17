@@ -1,0 +1,127 @@
+:root {
+    --colorPrimary: #fff;
+    --colorPrimaryDark: #000;
+    --colorSecondaryBlue: #0401FF;
+    --colorSecondarySkyblue: #61D8DE;
+}
+
+.contact-graphics {
+    background-color: #000;
+    background-image: url('/images/backgrounds/abstract-blue.jpg');
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 3rem;
+    width: 100%;
+    flex-shrink: 4;
+}
+
+.contact-wrapper {
+    padding: calc(1vw + 1.5rem);
+    padding-top: 1rem;
+    display: flex;
+    gap: 3rem;
+}
+.contact-container {
+    padding: 4rem calc(2rem + 2vw);
+    background-color: #f0f0f0;
+    border-radius: 3rem;
+    width: min(90%, 50rem);
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.contact-container > a {
+    width: fit-content;
+}
+.contact-container > a > img {
+    width: 12rem;
+}
+
+.contact-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.contact-heading h1 {
+    color: #000;
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+.contact-heading p {
+    padding: 0.8rem 0 0.8rem 3rem;
+    border-left: 0.5rem solid #000;
+    color: #606060;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.contact-form-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: calc(1rem + 1vw);
+}
+.contact-input-holder {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.contact-input-holder label {
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 150%;
+}
+.contact-input-holder input, .contact-input-holder textarea {
+    width: 100%;
+    padding: 1rem calc(0.5rem + 1vw);
+    border-radius: 1rem;
+    border: none;
+    outline: 0.1rem solid #909090;
+    background: #FFF;
+    font-size: 1.4rem;
+    font-weight: 500;
+    transition: all 0.3s;
+    resize: none;
+}
+.contact-input-holder input:focus, .contact-input-holder textarea:focus {
+    outline-color: #0401FF;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+.contact-submit {
+    margin-top: 3rem;
+    width: 100%;
+    padding: 1rem 3rem;
+    background-color: #0401FF;
+    border-radius: 0.8rem;
+    border: none;
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.contact-submit:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+@media only screen and (max-width: 750px) {
+    .contact-wrapper {
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+    .contact-container {
+        width: 100%;
+    }
+    .contact-graphics {
+        height: 15rem;
+    }
+}

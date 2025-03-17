@@ -1,0 +1,50 @@
+:root {
+    --colorPrimary: #fff;
+    --colorPrimaryDark: #000;
+    --colorSecondaryBlue: #0401FF;
+    --colorSecondarySkyblue: #61D8DE;
+}
+
+main {
+    background-color: #fff;
+    width: 100%;
+    height: min(100vh, 100dvh);
+    padding: 1rem 5vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.product-text {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.product-text h1 {
+    color: #222;
+    text-shadow: 0.1rem 0.1rem 0.5rem #fff;
+    font-size: 17vw;
+    font-family: 'Poppins', sans-serif;
+    line-height: 0.8;
+    font-weight: 200;
+}
+.download-button {
+    width: fit-content;
+    height: fit-content;
+    padding: 2rem 4rem;
+    border: none;
+    background-color: #0401FF;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 400;
+    transition: all 0.3s;
+}
+.download-button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
