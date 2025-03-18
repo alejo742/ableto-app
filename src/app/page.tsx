@@ -17,7 +17,7 @@ export default function Home() {
                     <h2>accesible.</h2>
                     <p>Transformamos el sector de la salud mediante tecnología <strong>ética y compasiva</strong> para asistir a aquellos que más lo necesitan.</p>
                 </div>
-                <a href="/productos/dotsense" className="hero-action-button main-action-button">
+                <a href="/productos" className="hero-action-button main-action-button">
                     <span>CONOCE MÁS</span>
                     <img src="/images/icons/up-more-arrows.svg" alt="" />
                 </a>

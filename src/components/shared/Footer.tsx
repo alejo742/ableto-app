@@ -9,15 +9,13 @@ export default function Footer() {
                     <h5>Encuentra lo que buscas</h5>
                     <ul>
                         <li><a href="#">Productos</a></li>
-                        <li><a href="#">Nosotros</a></li>
-                        <li><a href="/contacto">Contacto</a></li>
-                        <li><a href="#">Accede</a></li>
-                    </ul>
+                        {/* <li><a href="#">Nosotros</a></li> */}
+                        <li><a href="/contacto">Contacto</a></li>                    </ul>
                 </div>
                 <div className="footer-navigation">
                     <h5>Enlaces relacionados</h5>
                     <ul>
-                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a target="_blank" href="/files/Legal-AbleTo.pdf">Política de Privacidad</a></li>
                     </ul>
                 </div>
                 <div className="footer-image-banner">
@@ -29,7 +27,7 @@ export default function Footer() {
                 <img src="/images/ableto-transparent.png" alt="" />
                 <div className="footer-socials">
                     <a href="#"><img src="/images/icons/linkedin-social.svg" alt="" /></a>
-                    <a href="#"><img src="/images/icons/github-social.svg" alt="" /></a>
+                    {/* <a href="#"><img src="/images/icons/github-social.svg" alt="" /></a> */}
                     <a href="#"><img src="/images/icons/instagram-social.svg" alt="" /></a>
                 </div>
             </div>

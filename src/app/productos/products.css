@@ -4,3 +4,16 @@
     --colorSecondaryBlue: #0401FF;
     --colorSecondarySkyblue: #61D8DE;
 }
+
+.products-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

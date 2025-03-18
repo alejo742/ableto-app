@@ -1,0 +1,102 @@
+:root {
+    --colorPrimary: #fff;
+    --colorPrimaryDark: #000;
+    --colorSecondaryBlue: #0401FF;
+    --colorSecondarySkyblue: #61D8DE;
+}
+
+.product-section {
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+    display: grid;
+}
+.product-section.left {
+    grid-template-columns: 2fr 3fr;
+}
+.product-section.right {
+    grid-template-columns: 3fr 2fr;
+}
+.card-side {
+    border-top: 0.2rem solid #eeeeee;
+    border-bottom: 0.2rem solid #eeeeee;
+    padding: 3rem 3vw 3rem 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.product-section > img {
+    min-height: min(40rem, 70vh);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product-categories {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+.product-categories h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-radius: 0.6rem;
+    background-color: #0401FF;
+    color: #fff;
+}
+.card-side > h2 {
+    margin-top: 2rem;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #000;
+}
+.card-side > p {
+    border-left: 0.4rem solid #0401FF;
+    padding-left: 2rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #484848;
+}
+
+.card-side > a {
+    margin-top: 3rem;
+    width: fit-content;
+    align-self: flex-end;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    background-color: #0401FF;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.card-side > a:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 600px) {
+    .product-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .card-side {
+        padding: 3rem 3vw;
+    }
+    .product-section > img {
+        min-height: 30rem;
+    }
+    .card-side > h2 {
+        font-size: 3rem;
+    }
+    .card-side > p {
+        font-size: 1.1rem;
+    }
+    .card-side > a {
+        font-size: 1.3rem;
+    }
+}

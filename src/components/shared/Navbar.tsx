@@ -25,9 +25,9 @@ export default function Navbar() {
       <nav className="main-navbar">
         <a href="/"><img src="/images/ableto-transparent.png" alt="AbleTo Main Logo Blue"/></a>
         <ul className="main-navbar-links">
-            <li className="navbar-link"><a href="#">Nosotros</a></li>
+            {/* <li className="navbar-link"><a href="#">Nosotros</a></li> */}
             <li className="navbar-link"><a href="/contacto">Contacto</a></li>
-            <li className="main-navbar-button"><a href="#">Productos</a></li>
+            <li className="main-navbar-button"><a href="/productos">Productos</a></li>
         </ul>
         <div className="navbar-burger" onClick={openMobileMenu}>
             <div className="burger-line"></div>
@@ -45,11 +45,11 @@ export default function Navbar() {
             </div>
             <ul className="mobile-navbar-links">
               <li>
-                  <a href="#">Productos</a>
+                  <a href="/productos">Productos</a>
               </li>
-              <li>
+              {/* <li>
                   <a href="#">Nosotros</a>
-              </li>
+              </li> */}
               <li>
                   <a href="/contacto">Contacto</a>
               </li>
