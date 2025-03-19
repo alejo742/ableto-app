@@ -16,7 +16,7 @@ export default function Contacto() {
   return (
     <body>
         <Preloader />
-        <div className="contact-wrapper general-wrapper">
+        <div className="general-wrapper">
             <Navbar />
             <div className="contact-wrapper">
                 <div className="contact-graphics opacity-animate"></div>
