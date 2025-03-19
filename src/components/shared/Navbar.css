@@ -5,6 +5,16 @@
     --colorSecondarySkyblue: #61D8DE;
 }
 
+@keyframes paneDown {
+    0% {
+        opacity: 0.5;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .main-navbar {
     height: 7rem;
     width: 100%;
@@ -13,6 +23,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
+    animation: paneDown 0.5s 1s;
 }
 .main-navbar > a > img {
     height: 3rem;

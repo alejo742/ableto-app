@@ -62,7 +62,7 @@ body {
       font-size: 2em;
     }
     h1, h2, h3 {
-      font-family: 'Nexa';
+      font-family: 'Montserrat', sans-serif;
     }
     
     /* Grouping content
@@ -277,6 +277,13 @@ body {
     progress {
       vertical-align: baseline;
     }
+
+    /**
+      * Permit transforms and fancy stuff on labels
+      */
+    label {
+      display: inline-block;
+    }
     
     /**
      * Remove the default vertical scrollbar in IE 10+.
@@ -388,3 +395,95 @@ body {
     'opsz' 24;
     font-size: 1.6rem;
   }
+
+  /*animation styles*/
+@-webkit-keyframes textAnimate {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes textAnimate {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: none;
+  }
+}
+@-webkit-keyframes fadeAnimate {
+  0% {
+    transform: translateY(4rem);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes fadeAnimate {
+  0% {
+    transform: translateY(4rem);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes opacityAnimate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes opacityAnimate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.text-animate {
+  transform: translateY(120%);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.text-animate.animate-active {
+  -webkit-animation-name: textAnimate;
+          animation-name: textAnimate;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+.fade-animate {
+  transform: translateY(4rem);
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.fade-animate.animate-active {
+  -webkit-animation-name: fadeAnimate;
+          animation-name: fadeAnimate;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+.opacity-animate {
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.opacity-animate.animate-active {
+  -webkit-animation-name: opacityAnimate;
+          animation-name: opacityAnimate;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+div:has(> .text-animate) {
+  overflow: hidden;
+}

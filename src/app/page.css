@@ -71,15 +71,15 @@ header {
 }
 .hero-content-text h1 {
     color: #000;
-    font-family: "Nexa";
+    font-family: "Montserrat", sans-serif;
     font-size: 3rem;
-    font-weight: 900;
+    font-weight: 700;
 }
 .hero-content-text h2 {
     color: #0401FF;
-    font-family: "Nexa";
+    font-family: "Montserrat", sans-serif;
     font-size: 10rem;
-    font-weight: 900;
+    font-weight: 700;
     text-decoration-line: underline;
     text-underline-offset: 1rem;
 }

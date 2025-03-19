@@ -1,3 +1,10 @@
+:root {
+    --colorPrimary: #fff;
+    --colorPrimaryDark: #000;
+    --colorSecondaryBlue: #0401FF;
+    --colorSecondarySkyblue: #61D8DE;
+}
+
 /*Footer styling*/
 footer {
     margin-top: 5rem;
