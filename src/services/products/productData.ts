@@ -15,7 +15,7 @@ export const productHashes: Array<ProductHash> = [
         name: "DotSense",
         description: "DotSense es un programa que permite aprendizaje autónomo de Braille mediante tecnología táctil y reconocimiento de voz. Ideal para centros educativos, rehabilitación visual y uso personal, DotSense combina hardware USB de bajo consumo con software intuitivo, ofreciendo una experiencia educativa accesible para todas las edades.",
         image: "/images/products/dotsense.png",
-        hyperlink: "https://drive.google.com/file/d/1mkk6OmMXN3GiWVZOc_LWY3ueZZkakBpW/view?usp=sharing"
+        hyperlink: "https://drive.google.com/file/d/1Wrkol3MLYo2kpizMvSqFZqnJ-I9A757Y/view?usp=sharing"
     },
     {
         categories: ["AI", "Software", "Salud"],
